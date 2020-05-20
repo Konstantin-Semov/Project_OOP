@@ -1,7 +1,7 @@
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 
 @Entity
@@ -25,7 +25,7 @@ public class Rent_A_Car {
     @JoinColumn(name = "USER_ID")
     private User user_id;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "RENT_FROM")
     private Date rent_from;
 
